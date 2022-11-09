@@ -47,23 +47,44 @@ async function run() {
         })
 
         //Comments api
-        app.post('/comments', async(req, res) => {
-           const comment = req.body;
-           const result = await commentCollection.insertOne(comment);
-           res.send(result)
+        app.post('/comments', async (req, res) => {
+            const comment = req.body;
+            const result = await commentCollection.insertOne(comment);
+            res.send(result)
         })
 
         // getting service specified comments
-        app.get('/comments', async(req,res)=>{
+        app.get('/comments', async (req, res) => {
             let query = {};
-            if(req.query.serviceId){
-                query={
-                    serviceId : req.query.serviceId
+            if (req.query.serviceId) {
+                query = {
+                    serviceId: req.query.serviceId
                 }
             }
             const cursor = commentCollection.find(query);
             const comments = await cursor.toArray();
             res.send(comments)
+        })
+
+
+        // getting user specified comments
+        app.get('/comments', async (req, res) => {
+            let query = {};
+            if (req.query.email) {
+                query = {
+                    email: req.query.email
+                }
+            }
+            const cursor = commentCollection.find(query);
+            const comments = await cursor.toArray();
+            res.send(comments)
+        })
+
+        //deleting comments with specific id
+        app.delete('/comments/:id', async (req, res) => {
+            const {id} = req.params;
+            const result = commentCollection.deleteOne({_id: ObjectId(id)})
+            res.send(result)
         })
     }
     finally {
