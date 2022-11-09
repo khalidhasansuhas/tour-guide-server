@@ -16,38 +16,47 @@ const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@clu
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
-async function run(){
-try{
- const serviceCollection = client.db('tourGuide').collection('services')
+async function run() {
+    try {
+        const serviceCollection = client.db('tourGuide').collection('services')
+        const commentCollection = client.db('tourGuide').collection('comments')
 
- //services for the services page
- app.get('/services', async(req,res)=>{
-    const query = {}
-    const cursor = serviceCollection.find(query)
-    const services = await cursor.toArray();
-    res.send(services)
- })
+        //services API
+        //services for the services page
+        app.get('/services', async (req, res) => {
+            const query = {}
+            const cursor = serviceCollection.find(query)
+            const services = await cursor.toArray();
+            res.send(services)
+        })
 
- //services for home page limit to 3
- app.get('/servicesLimit', async(req,res)=>{
-    const query = {}
-    const cursor = serviceCollection.find(query).sort({$natural:-1}).limit(3)
-    const services = await cursor.toArray();
-    res.send(services)
- })
+        //services for home page limit to 3
+        app.get('/servicesLimit', async (req, res) => {
+            const query = {}
+            const cursor = serviceCollection.find(query).sort({ $natural: -1 }).limit(3)
+            const services = await cursor.toArray();
+            res.send(services)
+        })
 
- //service for a particular service
- app.get('/services/:id', async (req, res) => {
-    const id = req.params.id;
-    const query = { _id: ObjectId(id) };
-    const service = await serviceCollection.findOne(query);
-    res.send(service)
-})
-}
-finally{
+        //service for a particular service
+        app.get('/services/:id', async (req, res) => {
+            const id = req.params.id;
+            const query = { _id: ObjectId(id) };
+            const service = await serviceCollection.findOne(query);
+            res.send(service)
+        })
 
-}
-}run().catch(e=>console.log(e))
+        //Comments api
+        app.post('/comments', async(req, res) => {
+           const comment = req.body;
+           const result = await commentCollection.insertOne(comment);
+           res.send(result)
+        })
+    }
+    finally {
+
+    }
+} run().catch(e => console.log(e))
 
 app.get('/', (req, res) => {
     res.send('tour guide server is running')
