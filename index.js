@@ -52,6 +52,19 @@ async function run() {
            const result = await commentCollection.insertOne(comment);
            res.send(result)
         })
+
+        // getting service specified comments
+        app.get('/comments', async(req,res)=>{
+            let query = {};
+            if(req.query.serviceId){
+                query={
+                    serviceId : req.query.serviceId
+                }
+            }
+            const cursor = commentCollection.find(query);
+            const comments = await cursor.toArray();
+            res.send(comments)
+        })
     }
     finally {
 
