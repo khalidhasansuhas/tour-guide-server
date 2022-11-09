@@ -20,6 +20,7 @@ async function run(){
 try{
  const serviceCollection = client.db('tourGuide').collection('services')
 
+ //services for the services page
  app.get('/services', async(req,res)=>{
     const query = {}
     const cursor = serviceCollection.find(query)
@@ -27,6 +28,15 @@ try{
     res.send(services)
  })
 
+ //services for home page limit to 3
+ app.get('/servicesLimit', async(req,res)=>{
+    const query = {}
+    const cursor = serviceCollection.find(query).sort({$natural:-1}).limit(3)
+    const services = await cursor.toArray();
+    res.send(services)
+ })
+
+ //service for a particular service
  app.get('/services/:id', async (req, res) => {
     const id = req.params.id;
     const query = { _id: ObjectId(id) };

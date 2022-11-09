@@ -1,56 +1,50 @@
 [
-    {
-        "serviceName":"Presidential",
-        "photoURL": "https://images.unsplash.com/photo-1577624060070-ca1afe89ddad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1026&q=80",
-        "days": 30,
-        "payment": 5550,
-        "spot": "anywhere in Bangladesh",
-        "description": "Most people arrive in the chaotic city of Dhaka. Your guide will ensure you avoid getting completely overwhelmed in this maelstrom of humanity. Take an unforgettable boat ride from Sadarghat and witness firsthand life along the riverbanks of Old Dhaka. Outside of the capital, venture into mighty Sundarbans National Park, a tangled profusion of forest and mangrove swamp that is home to the Royal Bengal Tiger. Breathe in the scent of tea leaves in the lush green hills of Srimangal, and see where Bangladeshis take their holidays, at Cox's Bazaar.  "
-        
-      },
-      {
-        "serviceName":"Royal",
-        "photoURL": "https://images.unsplash.com/photo-1587222318667-31212ce2828d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGJhbmdsYWRlc2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-        "days": 15,
-        "payment": 3000,
-        "spot": "anywhere in Bangladesh",
-        "description": "Chance are if you're traveling to Bangladesh, you may be up for a bit of adventure. Known around the world as a nation prone to tragedy and misfortune, this resilient, feisty and beautiful country may well surprise you. Come explore its beaches, old growth forests, tea plantations and swarming cities on a private Bangladesh tour with a friendly local guide  "
-        
-      },
-      {
-        "serviceName":"Premium",
-        "photoURL": "https://images.unsplash.com/photo-1599137248983-e6061c27ec80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fGJhbmdsYWRlc2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-        "days": 10,
-        "payment": 2000,
-        "spot": "anywhere in Bangladesh",
-        "description": "in this package i will be your guide throughout Bangladesh. Bangladesh, to the east of India on the Bay of Bengal, is a South Asian country marked by lush greenery and many waterways. Its Padma (Ganges), Meghna and Jamuna rivers create fertile plains, and travel by boat is common. On the southern coast, the Sundarbans, an enormous mangrove forest shared with Eastern India, is home to the royal Bengal tiger. "
-        
-      },
-      {
-        "serviceName":"Standard",
-        "photoURL": "https://images.unsplash.com/photo-1558673810-9b0b6316d4f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHRvdXJpc3QlMjBpbiUyMGJhbmdsYWRlc2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-        "days": 7,
-        "payment": 1000,
-        "spot": "Chittagong Division",
-        "description": "I will ensure you avoid getting completely overwhelmed in this maelstrom of humanity. Take an unforgettable boat ride from Sadarghat and witness firsthand life along the riverbanks of Old Dhaka. Outside of the capital, venture into mighty Sundarbans National Park, a tangled profusion of forest and mangrove swamp that is home to the Royal Bengal Tiger. Breathe in the scent of tea leaves in the lush green hills of Srimangal, and see where Bangladeshis take their holidays, at Cox's Bazaar. "
-        
-      },
-      {
-        "serviceName":"Moderate",
-        "photoURL": "https://images.unsplash.com/photo-1558673810-9b0b6316d4f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHRvdXJpc3QlMjBpbiUyMGJhbmdsYWRlc2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-        "days": 3,
-        "payment": 500,
-        "spot": "Sylhet Division",
-        "description": "Breathe in the scent of tea leaves in the lush green hills of Srimangal.and explore tea state and the beauty of jaflong. sylhet is one of the best tourist spot in bangladesh. you can easily go to sylhet and enojoy it's view with me. "
-        
-      },
-      {
-        "serviceName":"Economy",
-        "photoURL": "https://images.unsplash.com/photo-1564034503-e7c9edcb420c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZGhha2F8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-        "days": 1,
-        "payment": 200,
-        "spot": "Inside Dhaka",
-        "description": "Dhaka is the capital city of Bangladesh, in southern Asia. Set beside the Buriganga River, its at the center of national government, trade and culture. The 17th-century old city was the Mughal capital of Bengal, and many palaces and mosques remain. American architect Louis Khans National Parliament House complex typifies the huge, fast-growing modern metropolis. . "
-        
-      }
+  {
+    "serviceName": "Presidential",
+    "image": "https://images.unsplash.com/photo-1577624060070-ca1afe89ddad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1026&q=80",
+    "days": 30,
+    "payment": 5550,
+    "spot": "anywhere in Bangladesh",
+    "description": "Most people arrive in the chaotic city of Dhaka. Your guide will ensure you avoid getting completely overwhelmed in this maelstrom of humanity. Take an unforgettable boat ride from Sadarghat and witness firsthand life along the riverbanks of Old Dhaka. Outside of the capital, venture into mighty Sundarbans National Park, a tangled profusion of forest and mangrove swamp that is home to the Royal Bengal Tiger. Breathe in the scent of tea leaves in the lush green hills of Srimangal, and see where Bangladeshis take their holidays, at Cox's Bazaar.  "
+  },
+  {
+    "serviceName": "Royal",
+    "image": "https://images.unsplash.com/photo-1587222318667-31212ce2828d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGJhbmdsYWRlc2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    "days": 15,
+    "payment": 3000,
+    "spot": "anywhere in Bangladesh",
+    "description": "Chance are if you're traveling to Bangladesh, you may be up for a bit of adventure. Known around the world as a nation prone to tragedy and misfortune, this resilient, feisty and beautiful country may well surprise you. Come explore its beaches, old growth forests, tea plantations and swarming cities on a private Bangladesh tour with a friendly local guide  "
+  },
+  {
+    "serviceName": "Premium",
+    "image": "https://images.unsplash.com/photo-1599137248983-e6061c27ec80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fGJhbmdsYWRlc2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    "days": 10,
+    "payment": 2000,
+    "spot": "anywhere in Bangladesh",
+    "description": "in this package i will be your guide throughout Bangladesh. Bangladesh, to the east of India on the Bay of Bengal, is a South Asian country marked by lush greenery and many waterways. Its Padma (Ganges), Meghna and Jamuna rivers create fertile plains, and travel by boat is common. On the southern coast, the Sundarbans, an enormous mangrove forest shared with Eastern India, is home to the royal Bengal tiger. "
+  },
+  {
+    "serviceName": "Standard",
+    "image": "https://images.unsplash.com/photo-1558673810-9b0b6316d4f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHRvdXJpc3QlMjBpbiUyMGJhbmdsYWRlc2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    "days": 7,
+    "payment": 1000,
+    "spot": "Chittagong Division",
+    "description": "I will ensure you avoid getting completely overwhelmed in this maelstrom of humanity. Take an unforgettable boat ride from Sadarghat and witness firsthand life along the riverbanks of Old Dhaka. Outside of the capital, venture into mighty Sundarbans National Park, a tangled profusion of forest and mangrove swamp that is home to the Royal Bengal Tiger. Breathe in the scent of tea leaves in the lush green hills of Srimangal, and see where Bangladeshis take their holidays, at Cox's Bazaar. "
+  },
+  {
+    "serviceName": "Moderate",
+    "image": "https://images.unsplash.com/photo-1558673810-9b0b6316d4f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHRvdXJpc3QlMjBpbiUyMGJhbmdsYWRlc2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    "days": 3,
+    "payment": 500,
+    "spot": "Sylhet Division",
+    "description": "Breathe in the scent of tea leaves in the lush green hills of Srimangal.and explore tea state and the beauty of jaflong. sylhet is one of the best tourist spot in bangladesh. you can easily go to sylhet and enojoy it's view with me. "
+  },
+  {
+    "serviceName": "Economy",
+    "image": "https://images.unsplash.com/photo-1564034503-e7c9edcb420c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZGhha2F8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    "days": 1,
+    "payment": 200,
+    "spot": "Inside Dhaka",
+    "description": "Dhaka is the capital city of Bangladesh, in southern Asia. Set beside the Buriganga River, its at the center of national government, trade and culture. The 17th-century old city was the Mughal capital of Bengal, and many palaces and mosques remain. American architect Louis Khans National Parliament House complex typifies the huge, fast-growing modern metropolis. . "
+  }
 ]
