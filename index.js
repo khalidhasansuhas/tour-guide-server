@@ -29,6 +29,13 @@ async function run() {
             const services = await cursor.toArray();
             res.send(services)
         })
+        
+        //add a service for the services page
+        app.post('/services', async (req, res) => {
+            const service = req.body;
+            const result = await serviceCollection(service);
+            res.send(result)
+        })
 
         //services for home page limit to 3
         app.get('/servicesLimit', async (req, res) => {
