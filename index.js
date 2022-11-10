@@ -83,9 +83,32 @@ async function run() {
         //deleting comments with specific id
         app.delete('/comments/:id', async (req, res) => {
             const {id} = req.params;
-            const result = commentCollection.deleteOne({_id: ObjectId(id)})
+            const result = await commentCollection.deleteOne({_id: ObjectId(id)})
+            res.send(result);
+        })
+        
+        // get specific product by id
+        app.get('/comments/:id', async (req, res) => {
+            const id = req.params.id;
+            const query = { _id: ObjectId(id) };
+            const comment = await commentCollection.findOne(query);
+            res.send(comment)
+        })
+        // update comments by specific id 
+        app.patch('/comments/:id', async(req,res)=>{
+            const id = req.params.id;
+            const comment = req.body.comment;
+            const query = {_id: ObjectId(id)}
+            const updateddoc = {
+                $set:{
+                    comment : comment
+                }
+            }
+            const result = await commentCollection.updateOne(query, updateddoc)
             res.send(result)
         })
+
+        
     }
     finally {
 
